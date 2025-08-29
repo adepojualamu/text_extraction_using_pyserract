@@ -1,0 +1,16 @@
+from pdf2image import covert_from_path
+import pytesseract
+
+#convert PDF to images
+images = convert_from_path("insert_the_pdfs_name here")
+
+full_text = ""
+for i, image in enumerate(images): 
+  text = pytesseract.image_to_string(image)
+  full_text += f"\n---page {i + 1} ---\n{text}"
+
+#save file to text file
+with open("name_of_output.txt", "w", encoding = 'utf-8') as f:
+  f.write(full_text)
+
+print ("text extraction complete.")
