@@ -12,7 +12,7 @@ A simple and straightforward Python program to extract text from PDF files and s
 
 1.  **Clone this repository:**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+       https://github.com/adepojualamu/text_extraction_using_pyserract.git
     cd your-repository-name
     ```
 
